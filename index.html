@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Muma | Ficha Cadastral & Serviços Informativos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fbf8f5',
+                            100: '#f6f0ea',
+                            200: '#eddccf',
+                            500: '#c28e64',
+                            600: '#ab744a',
+                            800: '#43322b',
+                            900: '#231a17',
+                        },
+                        slateDark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(229, 231, 235, 0.8);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #231a17 100%);
+        }
+        .gold-badge {
+            background: linear-gradient(135deg, #d4af37 0%, #ab744a 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Top Disclaimer Bar -->
+    <div class="bg-red-50 border-b border-red-200 px-4 py-3 text-xs md:text-sm text-red-900 text-center flex items-center justify-center gap-2 shadow-sm font-bold tracking-wide">
+        <i class="fa-solid fa-triangle-exclamation text-red-600"></i>
+        <span>PORTAL INFORMATIVO INDEPENDENTE - NÃO SOMOS O SITE OFICIAL DA EMPRESA REPRESENTADA</span>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-brand-800 flex items-center justify-center text-amber-400 font-bold text-xl shadow-md">
+                    M
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold text-slate-900 tracking-tight block">CASA MUMA</span>
+                    <span class="text-[10px] uppercase font-semibold text-brand-600 tracking-wider">Diretório Empresarial & Utilidades</span>
+                </div>
+            </div>
+
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+                <a href="#cadastro" class="hover:text-brand-600 transition-colors">Registro CNPJ</a>
+                <a href="#contato" class="hover:text-brand-600 transition-colors">Contatos & Local</a>
+                <a href="#servicos" class="hover:text-brand-600 transition-colors">Design & Decoração</a>
+                <a href="#veiculares" class="hover:text-brand-600 transition-colors flex items-center gap-1.5 text-blue-600 font-semibold">
+                    <i class="fa-solid fa-car-side"></i> Utilidades Veiculares
+                </a>
+            </nav>
+
+            <a href="#cadastro" class="bg-slate-900 hover:bg-brand-800 text-white text-xs sm:text-sm px-4 py-2.5 rounded-xl font-semibold transition-all shadow-sm flex items-center gap-2">
+                <i class="fa-solid fa-shield-halved"></i> Ver Ficha CNPJ
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white relative overflow-hidden py-16 md:py-20">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        SITUAÇÃO CADASTRAL: ATIVA
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                        Muma Comércio de Móveis S/A
+                    </h1>
+                    
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed">
+                        Página de consulta independente. Dados públicos cadastrais da <strong class="text-white">Casa Muma (São Paulo - SP)</strong>, agregando serviços paralelos de consultoria logística privada e B2B.
+                    </p>
+
+                    <!-- Quick Metrics -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 text-left">
+                        <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                            <span class="text-slate-400 text-xs block font-medium">CNPJ Ativo</span>
+                            <span class="text-white font-bold text-sm sm:text-base">17.688.095/0002-61</span>
+                        </div>
+                        <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                            <span class="text-slate-400 text-xs block font-medium">Fundação</span>
+                            <span class="text-white font-bold text-sm sm:text-base">25/11/2017</span>
+                        </div>
+                        <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm col-span-2 sm:col-span-1">
+                            <span class="text-slate-400 text-xs block font-medium">Tipo de Unidade</span>
+                            <span class="text-amber-300 font-bold text-sm sm:text-base">Filial (S.A. Fechada)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Card Highlight -->
+                <div class="lg:col-span-5">
+                    <div class="glass-card p-6 sm:p-8 rounded-3xl text-slate-800 shadow-2xl relative">
+                        <div class="flex justify-between items-start mb-6">
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-wider text-brand-600 block mb-1">Nome Fantasia</span>
+                                <h2 class="text-2xl font-bold text-slate-900">Casa Muma</h2>
+                            </div>
+                            <span class="px-3 py-1 rounded-lg bg-amber-100 text-amber-900 text-xs font-bold border border-amber-300">
+                                São Paulo - SP
+                            </span>
+                        </div>
+
+                        <div class="space-y-4 text-sm">
+                            <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
+                                <i class="fa-solid fa-location-dot text-brand-500 mt-1"></i>
+                                <div>
+                                    <strong class="block text-slate-900 font-semibold">Endereço Registrado:</strong>
+                                    <span class="text-slate-600">Rua Wisard, 193 - Vila Madalena, São Paulo - SP, 05434-080</span>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-100">
+                                <div class="flex items-center gap-3">
+                                    <i class="fa-solid fa-building-columns text-brand-500"></i>
+                                    <div>
+                                        <span class="text-xs text-slate-500 block">Capital Social</span>
+                                        <strong class="text-slate-900">R$ 77.647,00</strong>
+                                    </div>
+                                </div>
+                                <span class="text-xs bg-slate-200 text-slate-700 px-2 py-1 rounded font-medium">S.A. Fechada</span>
+                            </div>
+                        </div>
+
+                        <button onclick="copyToClipboard('17.688.095/0002-61', 'CNPJ copiado com sucesso!')" class="w-full mt-6 bg-slate-900 hover:bg-brand-800 text-white py-3 px-4 rounded-xl font-bold text-sm transition-all flex items-center justify-center gap-2 shadow-md">
+                            <i class="fa-regular fa-copy"></i> Copiar CNPJ Completo
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed CNPJ Registry Section -->
+    <section id="cadastro" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        <div class="mb-10 text-center md:text-left">
+            <span class="text-brand-600 font-extrabold uppercase text-xs tracking-widest block mb-2">Consulta de Dados Públicos</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Informações de Registro da Empresa</h2>
+            <p class="text-slate-500 text-sm mt-1">Dados oficiais provenientes dos registros da Receita Federal e Sintegra SP.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Card 1: Identificação -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow space-y-4">
+                <div class="w-10 h-10 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold">
+                    <i class="fa-solid fa-id-card"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 text-lg border-b border-slate-100 pb-2">Identificação Jurídica</h3>
+                <ul class="space-y-3 text-sm">
+                    <li>
+                        <span class="text-slate-500 block text-xs">Razão Social</span>
+                        <strong class="text-slate-800">Muma Comercio de Moveis S A</strong>
+                    </li>
+                    <li>
+                        <span class="text-slate-500 block text-xs">Nome Fantasia</span>
+                        <strong class="text-slate-800">Casa Muma</strong>
+                    </li>
+                    <li>
+                        <span class="text-slate-500 block text-xs">CNPJ Principal & Matriz/Filial</span>
+                        <strong class="text-slate-800">17.688.095/0002-61 (Filial)</strong>
+                    </li>
+                    <li>
+                        <span class="text-slate-500 block text-xs">Inscrição Estadual (SP)</span>
+                        <strong class="text-slate-800">118.782.916.116</strong>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Card 2: Status & Regime -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow space-y-4">
+                <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 text-lg border-b border-slate-100 pb-2">Situação & Porte</h3>
+                <ul class="space-y-3 text-sm">
+                    <li>
+                        <span class="text-slate-500 block text-xs">Situação Cadastral</span>
+                        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 mt-1">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span> Ativa desde 25/11/2017
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text-slate-500 block text-xs">Tempo de Abertura</span>
+                        <strong class="text-slate-800">8 anos, 9 meses e 7 dias</strong>
+                    </li>
+                    <li>
+                        <span class="text-slate-500 block text-xs">Natureza Jurídica & Porte</span>
+                        <strong class="text-slate-800">Soc. Anônima Fechada / Sem Enquadramento</strong>
+                    </li>
+                    <li>
+                        <span class="text-slate-500 block text-xs">Capital Social Declarado</span>
+                        <strong class="text-slate-800">R$ 77.647,00</strong>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Card 3: Opções Tributárias -->
+            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow space-y-4 md:col-span-2 lg:col-span-1">
+                <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold">
+                    <i class="fa-solid fa-calculator"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 text-lg border-b border-slate-100 pb-2">Regime Tributário</h3>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex justify-between items-center py-1">
+                        <span class="text-slate-500 text-xs">Opção pelo MEI</span>
+                        <span class="px-2 py-0.5 bg-slate-100 font-bold text-slate-700 rounded text-xs">Não</span>
+                    </li>
+                    <li class="flex justify-between items-center py-1 border-t border-slate-100">
+                        <span class="text-slate-500 text-xs">Opção pelo Simples</span>
+                        <span class="px-2 py-0.5 bg-slate-100 font-bold text-slate-700 rounded text-xs">Não</span>
+                    </li>
+                    <li class="pt-2">
+                        <span class="text-slate-500 block text-xs">Histórico de Exclusão do Simples</span>
+                        <span class="text-slate-700 font-medium block text-xs mt-1 bg-amber-50 p-2 rounded border border-amber-200">
+                            <strong>Período:</strong> 05/03/2013 até 31/12/2018
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section id="contato" class="py-16 bg-slate-100 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                
+                <!-- Left: Contact Details -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-brand-600 font-extrabold uppercase text-xs tracking-widest block mb-2">Canais Registrados</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Contato & Atendimento</h2>
+                        <p class="text-slate-500 text-sm mt-1">Meios diretos fornecidos nos registros públicos para correspondências e comunicação.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 space-y-4 shadow-sm">
+                        <a href="mailto:financeiro@muma.com.br" class="flex items-center gap-4 p-3 rounded-xl hover:bg-slate-50 transition-colors group">
+                            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-lg group-hover:scale-105 transition-transform">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-500 block">E-mail Financeiro</span>
+                                <strong class="text-slate-900 group-hover:text-brand-600 transition-colors">financeiro@muma.com.br</strong>
+                            </div>
+                        </a>
+
+                        <a href="tel:8132660105" class="flex items-center gap-4 p-3 rounded-xl hover:bg-slate-50 transition-colors group">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-lg group-hover:scale-105 transition-transform">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-500 block">Telefone Principal</span>
+                                <strong class="text-slate-900 group-hover:text-emerald-700 transition-colors">(81) 3266-0105</strong>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Postal Address Formatted Card -->
+                    <div class="bg-brand-900 text-white p-6 rounded-2xl space-y-3 relative overflow-hidden">
+                        <div class="flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-wider">
+                            <i class="fa-solid fa-box-archive"></i> Dados para Correspondência
+                        </div>
+                        <p class="font-mono text-sm leading-relaxed text-slate-200">
+                            Casa Muma Muma Comercio de Moveis S A<br>
+                            Rua Wisard 193<br>
+                            Vila Madalena<br>
+                            São Paulo SP | CEP: 05434-080
+                        </p>
+                        <button onclick="copyToClipboard('Casa Muma Muma Comercio de Moveis S A\nRua Wisard 193\nVila Madalena\nSão Paulo SP\n05434-080', 'Endereço completo copiado!')" class="w-full bg-white/10 hover:bg-white/20 text-white text-xs py-2 px-3 rounded-lg font-semibold transition-all flex items-center justify-center gap-2 border border-white/20">
+                            <i class="fa-regular fa-copy"></i> Copiar Endereço de Correspondência
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right: Interactive Map Placeholder / Address breakdown -->
+                <div class="lg:col-span-7 flex flex-col justify-between bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="font-extrabold text-slate-900 text-xl">Localização da Unidade</h3>
+                            <span class="text-xs bg-slate-100 text-slate-700 px-3 py-1 rounded-full font-semibold">Bairro Vila Madalena</span>
+                        </div>
+                        <p class="text-slate-600 text-sm mb-6">
+                            A unidade está localizada no tradicional bairro cultural e de design de São Paulo, na Rua Wisard.
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                                <span class="text-xs text-slate-500 block">Logradouro</span>
+                                <strong class="text-slate-800 text-sm">Rua Wisard, nº 193</strong>
+                            </div>
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                                <span class="text-xs text-slate-500 block">Bairro / Região</span>
+                                <strong class="text-slate-800 text-sm">Vila Madalena</strong>
+                            </div>
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                                <span class="text-xs text-slate-500 block">Cidade / Estado</span>
+                                <strong class="text-slate-800 text-sm">São Paulo - SP</strong>
+                            </div>
+                            <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                                <span class="text-xs text-slate-500 block">Código Postal (CEP)</span>
+                                <strong class="text-slate-800 text-sm">05434-080</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="https://maps.google.com/?q=Rua+Wisard+193+Vila+Madalena+Sao+Paulo+SP" target="_blank" class="w-full bg-slate-900 hover:bg-slate-800 text-white py-3.5 px-4 rounded-xl font-bold text-sm transition-all text-center flex items-center justify-center gap-2 shadow font-sans">
+                        <i class="fa-solid fa-map-location-dot"></i> Abrir no Google Maps
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Services Section -->
+    <section id="servicos" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <span class="text-brand-600 font-extrabold uppercase text-xs tracking-widest block mb-2">Atuação & Soluções</span>
+            <h2 class="text-3xl font-extrabold text-slate-900">Principais Serviços & Áreas de Atuação</h2>
+            <p class="text-slate-500 text-sm mt-2">Conheça os segmentos institucionais e o catálogo informativo oferecido pelo ecossistema de serviços.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Service Item 1 -->
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 hover:border-brand-500 transition-all shadow-sm hover:shadow-md flex flex-col justify-between group">
+                <div class="space-y-4">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-50 text-brand-600 flex items-center justify-center text-2xl font-bold group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Design de Interiores & Mobiliário Autoral</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Curadoria exclusiva de móveis contemporâneos e peças autorais assinadas por designers brasileiros. Atendimento focado em criar ambientes residenciais e corporativos sofisticados.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-600 pt-2">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Curadoria de móveis de design assinado</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Projetos corporativos e residenciais sob medida</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Objetos de decoração e iluminação exclusiva</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service Item 2 -->
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 hover:border-brand-500 transition-all shadow-sm hover:shadow-md flex flex-col justify-between group">
+                <div class="space-y-4">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl font-bold group-hover:bg-brand-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Consultoria de Espaços e Arquitetura</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Suporte especializado para arquitetos, designers e clientes finais na otimização de ambientes, especificação de acabamentos e harmonização estética.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-600 pt-2">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Especificação técnica de produtos</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Atendimento dedicado a profissionais do setor</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Orientação de layout e aproveitamento de espaço</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Special Section: Vehicular Utilities & Consultations -->
+    <section id="veiculares" class="py-16 bg-slate-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-4">
+                <div>
+                    <span class="text-blue-400 font-extrabold uppercase text-xs tracking-widest block mb-2">Serviços B2B Integrados</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Soluções e Consultoria Veicular Privada</h2>
+                    <p class="text-slate-400 text-sm mt-1">Gestão inteligente para frotas corporativas e consultoria em transporte logístico.</p>
+                </div>
+                <span class="px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30 text-xs font-semibold">
+                    <i class="fa-solid fa-building-user text-blue-400 mr-1"></i> Setor Privado
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Vehicle Sub-card 1 -->
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-blue-500/50 transition-all hover:bg-white/[0.07] space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg">Gestão de Frotas</h3>
+                    <p class="text-slate-300 text-xs leading-relaxed">
+                        Consultoria completa para controle de frota corporativa, planejamento de rotas e otimização de custos operacionais e logísticos.
+                    </p>
+                    <div class="pt-2 border-t border-white/10 text-[11px] text-blue-300 font-semibold flex items-center gap-1">
+                        <i class="fa-solid fa-angle-right"></i> Gestão Operacional Externa
+                    </div>
+                </div>
+
+                <!-- Vehicle Sub-card 2 -->
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-blue-500/50 transition-all hover:bg-white/[0.07] space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-file-signature"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg">Guias de Transporte</h3>
+                    <p class="text-slate-300 text-xs leading-relaxed">
+                        Assessoria para emissão de guias de transporte logístico interno, controle de despachos e relatórios de acompanhamento de carga.
+                    </p>
+                    <div class="pt-2 border-t border-white/10 text-[11px] text-emerald-300 font-semibold flex items-center gap-1">
+                        <i class="fa-solid fa-angle-right"></i> Logística e Movimentação
+                    </div>
+                </div>
+
+                <!-- Vehicle Sub-card 3 -->
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-blue-500/50 transition-all hover:bg-white/[0.07] space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-satellite-dish"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-lg">Rastreamento Privado</h3>
+                    <p class="text-slate-300 text-xs leading-relaxed">
+                        Serviços de telemetria e rastreamento em tempo real para empresas, garantindo a segurança de frotas e monitoramento de entregas.
+                    </p>
+                    <div class="pt-2 border-t border-white/10 text-[11px] text-amber-300 font-semibold flex items-center gap-1">
+                        <i class="fa-solid fa-angle-right"></i> Telemetria Avançada B2B
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Notification for Copy -->
+    <div id="toast" class="fixed bottom-6 right-6 bg-slate-900 text-white px-5 py-3 rounded-xl shadow-2xl border border-slate-700 flex items-center gap-3 translate-y-24 opacity-0 transition-all duration-300 z-50 pointer-events-none">
+        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+        <span id="toast-message" class="text-xs font-semibold">Copiado com sucesso!</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 text-xs py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 border-b border-slate-800 pb-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-brand-800 flex items-center justify-center text-amber-400 font-bold text-sm">
+                        M
+                    </div>
+                    <span class="text-white font-bold text-sm">Muma Comércio de Móveis S/A</span>
+                </div>
+                <p class="text-slate-500 text-center md:text-right">
+                    CNPJ: 17.688.095/0002-61 • Inscrição Estadual SP: 118.782.916.116
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-slate-400 text-[11px] leading-relaxed">
+                <div>
+                    <strong class="text-slate-200 block mb-1">Aviso Legal & Transparência:</strong>
+                    <span class="text-red-400 font-bold uppercase block mb-1">.</span>
+                    
+                </div>
+                <div>
+                    <strong class="text-slate-200 block mb-1">Endereço Registrado:</strong>
+                    Rua Wisard, 193 - Vila Madalena, São Paulo - SP, CEP 05434-080.<br>
+                    E-mail: financeiro@muma.com.br | Telefone: (81) 3266-0105
+                </div>
+            </div>
+
+            <div class="text-center text-slate-600 pt-4">
+                &copy; 2026 Portal Informativo Empresarial. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive JS Script -->
+    <script>
+        function copyToClipboard(text, message) {
+            // Standard fallback copy implementation
+            const tempInput = document.createElement("textarea");
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+
+            // Trigger UI Toast Notification
+            const toast = document.getElementById("toast");
+            const toastMessage = document.getElementById("toast-message");
+            
+            toastMessage.textContent = message || "Copiado para a área de transferência!";
+            toast.classList.remove("translate-y-24", "opacity-0");
+            toast.classList.add("translate-y-0", "opacity-100");
+
+            setTimeout(() => {
+                toast.classList.remove("translate-y-0", "opacity-100");
+                toast.classList.add("translate-y-24", "opacity-0");
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
